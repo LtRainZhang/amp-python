@@ -1,4 +1,10 @@
 # coding=utf-8
+
+'''
+author: Yingchun Zhang
+organization:Nanjing University
+'''
+
 from ase import io
 from amp import Amp
 from amp.descriptor.gaussian import Gaussian
