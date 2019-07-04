@@ -7,16 +7,14 @@ def is_number(s):
         return True
     except ValueError:
         pass
-
+    
     try:
         import unicodedata
         unicodedata.numeric(s)
         return True
     except (TypeError, ValueError):
         pass
-
     return False
-
 
 dirName = r'./'
 fileName = 'sio2-log.txt'
@@ -47,15 +45,14 @@ for frame2,line2 in enumerate(c):
     ForceRMSE.append(float(line2.split()[7]))
     Force_MaxResid.append(float(line2.split()[9]))
 
-
+'''
 print(listnum)
 print(Loss)
 print(Energy_MaxResid)
 print(EnergyRMSE)
 print(Force_MaxResid)
 print(ForceRMSE)
-
-
+'''
 
 figsize = 8,6
 figure, ax = plt.subplots(figsize=figsize)
