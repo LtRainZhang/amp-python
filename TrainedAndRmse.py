@@ -15,7 +15,7 @@ from amp.model import LossFunction
 import numpy as np
 
 dirName = './'
-x = io.read(dirName + '../../traj/' + 'train.traj',index=':')[200:400]
+x = io.read(dirName + 'train.traj',index=':')[200:400]
 #y = io.read(dirName + '../' + 'h3o-spe-1.traj', index=':')[50:100]
 test_images = x
 nimages = len(test_images)
